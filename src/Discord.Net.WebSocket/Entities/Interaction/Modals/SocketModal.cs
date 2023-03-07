@@ -357,7 +357,7 @@ namespace Discord.WebSocket
 
             var response = new API.InteractionResponse
             {
-                Type = InteractionResponseType.DeferredUpdateMessage,
+                Type = InteractionResponseType.DeferredChannelMessageWithSource,
                 Data = ephemeral ? new API.InteractionCallbackData { Flags = MessageFlags.Ephemeral } : Optional<API.InteractionCallbackData>.Unspecified
             };
 
